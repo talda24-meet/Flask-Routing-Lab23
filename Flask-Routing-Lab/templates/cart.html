@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
+    <h1 class="header">Air Jordan 1 Chicago</h1>
+    <img src="{{url_for('static', filename='jordan1.jpg')}}" class="trendingImg" />
+    <h1>Price: 5$</h1>
 
+    <h1 class="header">Air Force 1 White</h1>
+    <img src="{{url_for('static', filename='airforce1.jpg')}}" class="trendingImg" />
+    <h1>Price: 3$</h1>
+    <br>
+    <a href="/">Home</a>
 </body>
 </html>

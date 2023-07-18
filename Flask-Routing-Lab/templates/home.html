@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-
+    <h1 class="header">My shoe store</h1>
+    <div class="homeSection">
+        <h2 class="trending">Trending items: </h2>
+        <img src="{{url_for('static', filename='jordan1.jpg')}}" class="trendingImg" />
+        <img src="{{url_for('static', filename='adidas1.webp')}}" class="trendingImg" />
+        <img src="{{url_for('static', filename='airforce1.jpg')}}" class="trendingImg" />
+        <img src="{{url_for('static', filename='blazer.png')}}" class="trendingImg" />
+        <img src="{{url_for('static', filename='jordan36.webp')}}" class="trendingImg" />
+    </div>
+<br>
+<p class="description">This is my shoe store and above are the trending items. I made this store because shoes are overpriced so here are of the most popular shoes but for cheap because I am rich and don't mind spending my money on providing cool shoes for cheap to random people. On a side note all the shoes are sustainable.</p>
+<a href="/product">Best product</a>
+<a href="/cart">Cart</a>
 </body>
 </html>

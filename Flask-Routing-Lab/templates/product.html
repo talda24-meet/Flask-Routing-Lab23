@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Product</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-
+    <h1 class="header">Air Jordan 1 Chicago</h1>
+    <img src="{{url_for('static', filename='jordan1.jpg')}}" class="trendingImg" />
+    <p class="product">The Air Jordan 1 Chicago is the breakout shoe of the Jordan brand. It is also probably the most popular shoe of all time. Everybody and their brother either own, owned, or want this shoe. As a result it has a similar price to 3 months of rent. Here is that same shoe for very cheap.</p>
+    <h1>Price: 5$</h1>
+    <br>
+    <a href="/">Home</a>
+    <a href="/cart">Add to cart</a>
 </body>
 </html>
